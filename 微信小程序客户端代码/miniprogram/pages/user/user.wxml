@@ -1,0 +1,29 @@
+<!--pages/home/home.wxml-->
+<image src='/images/bg.png' class='bg'></image>
+
+<view class='hot-card'>   
+  <view class='hot-name'>
+    <image class='hot-name-line' src='/images/line-red.png'></image>
+    <view class='hot-name-text'>英语选词填空智能作答机器人</view>
+    <image class='hot-name-line' src='/images/line-red.png'></image>
+  </view>
+  <!--<image class="school-logo" src="/images/school.png"></image>-->
+  <view class="user-info">
+    <view class="user-name">Fangn, Inc.</view> <!--Fangn, Inc.-->
+    <view class="school-name">Hangzhou, China</view>  <!--Hangzhou, China-->
+  </view>
+</view>
+
+<view class='list-title'>
+  <image class='list-title-line' src='/images/line-black.png'></image>
+  <view class='list-title-text'>历史记录</view>
+  <image class='list-title-line' src='/images/line-black.png'></image>
+</view>
+
+
+<view class='product-row' wx:for="{{productList}}" wx:key="id" wx:if="{{index%2===0}}">
+  <navigator class='product-card' wx:for="{{[productList[index], productList[index+1]]}}" wx:key="id">
+    <view class='product-name'>{{item.name}}</view>
+  </navigator>
+</view>
+

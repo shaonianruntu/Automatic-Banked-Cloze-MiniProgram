@@ -1,0 +1,95 @@
+/* pages/home/home.wxss */
+/*焦点栏*/
+.hot-card {
+  position: relative;
+  margin: 32rpx 52rpx 0;
+  height: 326rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.05);
+  border-radius: 13rpx;
+}
+
+/*焦点栏左上角商品名称栏*/
+.hot-name{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 44rpx;
+  top: 41rpx;
+  width: 500rpx;
+}
+.hot-name-line{
+  width: 24rpx;
+  height: 39rpx;
+}
+.hot-name-text{
+  margin: 0 20rpx;
+  font-size: 28rpx;
+  color: #34373D;
+  font-weight: bold;
+}
+
+.user-info{
+  position: absolute;
+  top: 226rpx;
+  right: 40rpx;
+  text-align: right;
+  font-size: 26rpx;  /*26*/
+  font-weight: bold;
+  line-height: 40rpx;
+  color: #34373D;
+}
+
+.school-logo{
+  position: absolute;
+  height: 60rpx;
+  width: 60rpx;
+  top: 236rpx;
+  right: 200rpx;
+}
+
+
+/*分隔栏*/
+.list-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100rpx 0 50rpx;
+}
+.list-title-line{
+  width: 21rpx;
+  height: 34rpx;
+}
+.list-title-text{
+  margin: 0 20rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #34373D;
+}
+
+
+/*商品栏*/
+.product-row{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 52rpx 28rpx;
+}
+.product-card{
+  flex: 1;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.05);
+  border-radius: 13rpx;
+}
+.product-card:first-child{
+  margin-right: 27rpx;
+}
+
+
+/*商品栏，每一行中的每一列*/
+.product-name{
+  margin: 24rpx 22rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  line-height: 40rpx;
+  color: rgba(29, 29, 38, 0.8);
+}

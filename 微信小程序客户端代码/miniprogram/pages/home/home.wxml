@@ -1,0 +1,44 @@
+<image src='/images/bg.png' class='bg'></image>
+
+<view class='camera-card'>  
+  <camera class="camera-area" device-position="back" flash="off" binderror="error">
+  </camera>
+</view>
+
+<view class="photo-card">
+  <image class='photo-area' wx:if="{{src}}" mode="" src="{{src}}">
+  </image>
+</view>
+
+<view class="button-area">
+  <button class='cameraButton-card' bindtap='takePhoto'>
+    <image class="cameraButton-area" src="/images/image.png">
+    </image>
+  </button>
+  <button class='anotherButton-card' bindtap='takeAnotherPhoto'>
+  </button>
+  <button class='answerButton-card' bindtap='sendQuestion'>
+    <image class="answerButton-area" src="/images/check.png">
+    </image>
+  </button>
+</view>
+
+<view class='trans-card'>
+  <textarea wx:if="{{ques_line}}" class="trans-input" bindblur="bindQuestion" value="{{ques_line}}" placeholder-class='trans-placeHolder'/>
+  <textarea wx:if="{{!ques_line}}" class='trans-input' bindblur="bindQuestion" placeholder="你可以在这里修正你的问题" placeholder-class='trans-placeHolder'/>
+</view>
+
+<view class='answer-card'>
+  <textarea wx:if="{{answer_line}}" class="answer-input" bindblur="bindAnswer" value="{{answer_line}}" placeholder-class='answer-placeHolder'/>
+  <textarea wx:if="{{!answer_line}}" class='answer-input' bindblur="bindAnswer" placeholder="你可以在这里修正你的候选项" placeholder-class='answer-placeHolder'/>
+</view>
+
+<view class="result-card">
+  <view class='result-area' wx:if="{{!result_line}}" style='color:grey; font-size:28rpx'>
+  我们将在这里显示答案
+  </view>
+  <view class='result-area' wx:if="{{result_line}}">
+  {{result_line}}
+  </view>
+</view>
+

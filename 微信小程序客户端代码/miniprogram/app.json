@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/ext/ext",
+    "pages/user/user"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "单项选择",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-sel.png"
+      },
+      {
+        "pagePath": "pages/ext/ext",
+        "text": "选词填空",
+        "iconPath": "images/order.png",
+        "selectedIconPath": "images/order-sel.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "历史记录",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user-sel.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

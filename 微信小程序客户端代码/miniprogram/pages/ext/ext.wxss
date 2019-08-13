@@ -1,0 +1,115 @@
+/*摄像头按钮区域*/
+.cameraButton-card{
+  position: relative;
+  margin: 32rpx 312rpx 0;
+  width: 126rpx;
+  height: 126rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx   rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 3
+}
+.cameraButton-area{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  width: 86rpx;
+  height: 86rpx;
+}
+
+
+/*摄像头区域*/
+.camera-card {
+  position: relative;
+  margin: -64rpx 50rpx 0;
+  height: 1120rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.1);
+  border-radius: 13rpx;
+  z-index: 1
+}
+.camera-area{
+  position: absolute;
+  margin: 10rpx 10rpx 0;
+  width: 630rpx;
+  height: 1100rpx;
+  border-radius: 13rpx;
+}
+
+
+/*ocr翻译区域*/
+.trans-card{
+  position: relative;
+  margin: 20rpx 50rpx 0;
+  padding: 10rpx 10rpx;
+  height: 250rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.1);
+  border-radius: 13rpx; 
+}
+.trans-placeHolder, .answer-placeHolder{
+  font-size: 28rpx;
+  position: absolute;
+  width: 630rpx;
+  height: 250rpx;
+  z-index: 1;
+  border-radius: 13rpx;
+}
+.trans-input{
+  font-size: 30rpx;
+  width: 630rpx;
+  height: 250rpx;
+}
+.answer-input{
+  font-size: 30rpx;
+  width: 630rpx;
+  height: 250rpx;
+}
+/*自动作答结果区域*/
+.answer-card{
+  position: relative;
+  margin: 20rpx 50rpx 0;
+  padding: 10rpx 10rpx;
+  height: 250rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.1);
+  border-radius: 13rpx; 
+}
+
+
+/*运行语言模型进行评估的按钮77*56*/
+.answerButton-card{
+  position: relative;
+  margin: 50rpx 312rpx 0;
+  width: 126rpx;
+  height: 126rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx   rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 3;
+}
+.answerButton-area{
+  position: absolute;
+  top: 31rpx;
+  left: 19rpx;
+  width: 88rpx;
+  height: 64rpx;
+  z-index: 4;
+  opacity: 0.35;
+}
+
+
+/*选择题答案显示*/
+.result-card{
+  position: relative;
+  margin: 50rpx 50rpx 32rpx;
+  padding: 10rpx 10rpx;
+  height: 250rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.1);
+  border-radius: 13rpx;  
+}
+.result-area{
+  font-size: 30rpx;
+  color: orangered;
+}
