@@ -1,4 +1,4 @@
-# English-Multiple-Choice-And-Cloze-Test-Agent
+# Wechat mini program for automatic banked cloze based on natural language processing
 英语选词填空智能作答机器人
 
 # 代码文件说明
